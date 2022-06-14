@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <script>
+            document.addEventListener('DOMContentLoaded', start);
+
+
+            function start() {
+                let buttonStart = document.getElementById('button');
+                buttonStart.addEventListener('click', split);
+            }
+
+            function split() {
+                let textInit = document.getElementById('input').value;
+                const text = textInit.split(' ');
+
+                for (let i = 0; i < text.length; i++) {
+                    moveLetters(text, i);
+                }
+
+
+            }
+
+            function moveLetters(text, i) {
+                if (text[i].length > 4) {
+                    let string = text[i];
+                    let newString = "";
+                    newString += string[0];
+                    for (let j = 1; j < string.length; j++) {
+                        let unit = mathRandom(string.length);
+
+
+                    }
+                    newString += string[string.length - 1];
+                }
+                text[i] = newString;
+            }
+
+            function mathRandom(length) {
+                return Math.floor(Math.random() * length - 2) + 1;
+            }
+
+
+
+        </script>
+    </head>
+
+    <body>
+        <input type="text" id="input">
+        <button id="button">Swipe</button>
+    </body>
+
+</html>

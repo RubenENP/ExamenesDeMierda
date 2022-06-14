@@ -1,0 +1,51 @@
+ul{
+    list-style: none;
+}
+
+#leftAside {
+    background-image: url('../img/flag-netherlands.svg');
+    background-size: 100px;
+    background-repeat: repeat-y;
+    height: 1250px;
+}
+
+#rightAside {
+    background-image: url('../img/cheese-wedge.svg');
+    background-repeat: repeat-y;
+    height: 1250px;
+    background-size: 100px;
+}
+
+#main {
+    background-color: red;
+}
+
+#main h1{
+    color: white;
+}
+
+p {
+    font-size: 17px; 
+    color: white;
+}
+
+.container {
+    background-color: black;
+    border-radius: 17px;
+    padding: 1%;
+    width: 500px;
+}
+
+.amsterdam {
+    color: red;
+    font-size: 25px;
+}
+
+.amsterdam1 {
+    color: black;
+    font-size: 25px;
+}
+
+#list {
+    background-color: white;
+}
